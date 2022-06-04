@@ -1,0 +1,78 @@
+._chatbox{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 160px);
+    padding: 50px;
+    overflow-y: auto;
+}
+.message1{
+    position: relative;
+    display: flex ;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 5px 0;
+    
+}
+.message2{
+    position: relative;
+    display: flex ;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 5px 0;
+}
+.message1 ._p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    justify-content: flex-end;
+    background: #dcf8dc;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+.message2 ._p{
+    position: relative;
+    right: 0;
+    max-width: 65%;
+    padding: 12px;
+    background: #fff;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+.message1 ._p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background:linear-gradient(135deg,#dcf8dc 0%,#dcf8dc 50%,transparent 50%,transparent);
+
+}
+.message1 ._p span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+    color: #555;
+}
+.message2 ._p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background:linear-gradient(225deg,#fff 0%,#fff 50%,transparent 50%,transparent);
+
+}
+.message2 ._p span{
+    display: block;
+    margin-top: 5px;
+    justify-content: flex-end;
+    font-size: 0.85em;
+    opacity: 0.5;
+    color: #555;
+}

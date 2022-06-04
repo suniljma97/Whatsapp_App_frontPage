@@ -1,0 +1,89 @@
+._header{
+    position: relative;
+    border-left: 1px solid rgb(210, 207, 207);
+    width: 100%;
+    height: 60px;
+    background: #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+._userimg{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+._cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+._nav_icons{
+   display: flex;
+
+}
+._nav_icons li{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+._imgText{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+._imgText p{
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+._imgText p span{
+    font-size: 0.8em;
+    color: #555;
+
+}
+.chatbox_input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatbox_input ion-icon{
+   cursor: pointer;
+   font-size: 1.8em;
+   color: #51585c;
+} 
+.chatbox_input ion-icon:nth-child(1)
+{
+    margin-right: 15px;
+}
+.chatbox_input input{
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+
+
+}
+
+
+
