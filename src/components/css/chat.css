@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: calc(100vh - 160px);
-    padding: 50px;
+    padding: 100px;
     overflow-y: auto;
 }
 .message1{
@@ -22,25 +22,35 @@
 }
 .message1 ._p{
     position: relative;
-    right: 0;
     text-align: right;
     max-width: 65%;
-    padding: 12px;
+    padding: 5px;
     justify-content: flex-end;
     background: #dcf8dc;
     border-radius: 10px;
     font-size: 0.9em;
 }
+.message1 ._p ._name{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 70px;
+}
+.message2 ._p ._name{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 70px;
+}
 .message2 ._p{
     position: relative;
     right: 0;
     max-width: 65%;
-    padding: 12px;
+    padding: 5px;
     background: #fff;
     text-align: left;
     border-radius: 10px;
     font-size: 0.9em;
 }
+
 .message1 ._p::before{
     content: '';
     position: absolute;
@@ -53,8 +63,8 @@
 }
 .message1 ._p span{
     display: block;
-    margin-top: 5px;
-    font-size: 0.85em;
+    margin-top: -10px;
+    font-size: 0.8em;
     opacity: 0.5;
     color: #555;
 }
@@ -70,9 +80,9 @@
 }
 .message2 ._p span{
     display: block;
-    margin-top: 5px;
-    justify-content: flex-end;
-    font-size: 0.85em;
+    margin-top: -10px;
+    text-align: end;
+    font-size: 0.8em;
     opacity: 0.5;
     color: #555;
 }
