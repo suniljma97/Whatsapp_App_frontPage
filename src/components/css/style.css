@@ -21,6 +21,11 @@
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06),0 2px 5px 0 rgba(0,0,0,0.06);
 }
+@media screen and (max-width: 1400px) {
+    ._container{
+    height: 100vh;
+    }
+}
 ._leftSide
 {
     position: relative;
@@ -33,6 +38,11 @@
     position: relative;
     flex: 70%;
     background: #e5ddd5;
+}
+@media screen and (max-width:  600px) {
+    ._rightSide {
+    display: none;
+    }
 }
 ._container ._rightSide::before{
     content: '';

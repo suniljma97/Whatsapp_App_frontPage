@@ -132,6 +132,7 @@
     justify-content: space-between;
     align-items: center;
 }
+/*-webit-Safari,google chrome ,android , ios*/
 ._message p{
     color: #aaa;
     display: -webkit-box;

@@ -17,12 +17,14 @@ function Chats(props) {
             <div className="message2">
               <div className="_p">
                 <div className="_name">
-                  Cloudcover - {s1.cloudcover} <br />
-                  Snow      - {s1.snow} <br />
-                  Humidity - {s1.humidity} <br />
-                  Temperature - {s1.temp} <br />
-                  Pressure - {s1.pressure} <br />
-                  Solarenergy - {s1.solarenergy} <br />
+                  ResolvedAddress - {s1.resolvedAddress} <br />
+                  Timezone - {s1.timezone} <br />
+                  Cloudcover - {s1.currentConditions.cloudcover} <br />
+                  Snow      - {s1.currentConditions.snow} <br />
+                  Humidity - {s1.currentConditions.humidity} <br />
+                  Temperature - {s1.currentConditions.temp} <br />
+                  Pressure - {s1.currentConditions.pressure} <br />
+                  Solarenergy - {s1.currentConditions.solarenergy} <br />
                 </div>
                 <span>{s1.time}
                 </span>

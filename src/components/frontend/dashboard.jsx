@@ -22,7 +22,8 @@ class DashBoard extends Component {
         {
             let response = await http.get(`/data/${city}`)
             let { data } = response;
-            this.setValue(data.currentConditions)
+            console.log(data);
+            this.setValue(data)
         }
     }
     async componentDidMount() {

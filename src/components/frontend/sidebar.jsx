@@ -29,7 +29,7 @@ class SideBar extends Component {
                 {datas.map((s, index) =>
                         <div tabIndex={index + 1} className="_block" onClick={()=>this.ClickName(s.id)} key={index}>
                             <div className="_imgbx">
-                                <img src={s.img} className="_cover" />
+                                <img src={s.img} className="_cover" alt="" />
                             </div>
                             {s.mess === "" ? (
                                 <div className="_details">
