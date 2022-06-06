@@ -18,7 +18,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 const port=process.env.PORT_NUMBER;
 app.listen(port, () => console.log(`Node app listening on port ${port}!`));
-let baseURL="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline";
 let axios=require("axios");
 app.get("/data/:city",function(req,res){
     let city = req.params.city;
@@ -28,7 +27,7 @@ app.get("/data/:city",function(req,res){
             contentType:process.env.CONTENT_TYPE,
             include:process.env.INCLUDE
           };
-    axios.get(baseURL+`/${city}`,{params:params})
+    axios.get(process.env.BASE_URL+`/${city}`,{params:params})
     .then(function(response){   
         res.send(response.data);
     })
